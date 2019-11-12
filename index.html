@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function sumar(valor) {
+            var total = 0;
+            valor = parseInt(valor); // Convertir el valor a un entero (número).
+
+            total = document.getElementById('resultado').innerHTML;
+
+            // Aquí valido si hay un valor previo, si no hay datos, le pongo un cero "0 ".
+            total = (total == null || total == undefined || total == " ") ? 0 : total;
+
+            /* Esta es la suma. */
+            total = (695 + parseInt(valor));
+
+            // Colocar el resultado de la suma en el control "span ".
+            document.getElementById('resultado').innerHTML = total;
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-light colornav">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo_principal.png" alt="">
+            </a>
+            <a href="https://admin.hiit.io/">
+                <p class="coloGrisClaro"> Acceso a clientes></p>
+            </a>
+        </nav>
+        <div>
+            <div class="posicionText5">
+                <h3>Controla tu <br> centro deportivo </h3>
+            </div>
+            <div class="posicionText6 d-none d-md-block">
+                <h6 class="text-white">Control total de sus clases, ingresos, <br> alumnos y maestros en tiempo real desde <br> cualquier dispositivo</h6>
+            </div>
+            <div>
+                <picture>
+                    <source media="(min-width: 700px)" srcset="img/Compu.png">
+                    <source media="(min-width: 300px)" srcset="img/Compu_movil.png">
+                    <img class="img-fluid" src="img/Compu.png " alt="IfItDoesntMatchAnyMedia ">
+                </picture>
+                <!----<img class="img-fluid " srcset="img/Compu_movil.png 320w , img/Compu.png 480w " src="img/Compu.png " alt=" ">-->
+            </div>
+        </div>
+
+
+        <div class="bgC py-5 ">
+            <div class="row ">
+                <div class="col-6 d-flex justify-content-center align-items-center float-right ">
+                    <div class="row d-flex justify-content-center ">
+                        <div class="col-6 d-none d-md-block ">
+                            <h3 class="colorNaranja ">Gestión <br> poderosa</h3>
+                            <h6 class="mt-3 coloGrisObscuro ">Domina las métricas que importan y toma mejores desiciones con nuestras herramientas de monitoreo en tiempo real.
+                            </h6>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-sm-12 col-md-6 ">
+                    <div class=" ">
+                        <img src="img/Controldepagos.png " alt=" ">
+                        <img src="img/Controlacademico.png " class="mx-3 " alt=" ">
+                        <img src="img/Indicadoresclave.png " alt=" ">
+
+                    </div>
+                    <div class="alin position-relative ">
+                        <img src="img/Reportemetricas.png " class="mx-3 " alt=" ">
+                        <img src="img/Calendarioescolar.png " alt=" ">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="posicionText7 ">
+                <ul>
+                    <li>
+                        <p class="text-white "> <strong>Toma de desiciones</strong> con el tablero de indicadores </p>
+                    </li>
+                    <li>
+                        <p class="text-white "> <strong>Gestiona</strong> tus socios y entrenadores </p>
+                    </li>
+                    <li>
+                        <p class="text-white "> <strong>Registra</strong> tus ventas </p>
+                    </li>
+                    <li>
+                        <p class="text-white "> <strong>Mide</strong> la productividad de tu personal </p>
+                    </li>
+                    <li>
+                        <p class="text-white "> <strong>Administra</strong> tus rutinas y clases </p>
+                    </li>
+                    <li>
+                        <p class="text-white "> <strong>Controla</strong> tus ingresos y egresos </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <picture>
+                    <source media="(min-width: 700px) " srcset="img/Foto.png ">
+                    <source media="(min-width: 300px) " srcset="img/pesas_movil.png ">
+                    <img class="img-fluid " src=img/Foto.png " alt="IfItDoesntMatchAnyMedia ">
+                </picture>
+
+            </div>
+        </div>
+
+        <div class="barra bgC ">
+            <div class="row justify-content-center ">
+                <div class="d-flex justify-content-center mt-5 col-12 ">
+                    <h3 class="pb-3 colorNaranja ">Controla tu centro deportivo</h3>
+                </div>
+            </div>
+        </div>
+        <div class="barra colornav ">
+            <div class="row justify-content-center ">
+                <div class="d-flex justify-content-center align-items-center my-5 col-5 ">
+                    <h4 class="text-white "><sup>$</sup>695</h4>
+                    <h6 class="text-white "><sub>MXN</sub></h6> <img class="mx-3 " src="img/Group10.png " alt=" ">
+
+                    <input type="text " class="form-control col-12 col-sm-5 " id="txt_campo_1 " onchange="sumar(this.value); " placeholder=" ">
+
+                    <img class="mx-3 "  src="img/Group5.png " alt=" ">
+
+                    <h3 class="text-white " id="resultado "><sup>$</sup>0</h3>
+                    <h6 class="text-white "> <sub>MXN</sub> </h6>
+
+                </div>
+            </div>
+        </div>
+        <div class="bgC ">
+            <div class="row ">
+                <div class="col-12 botonPosicion ">
+                        <input type="button " class="button " value="Enviar ">
+                </div>
+            </div>
+        </div>
+        <div class="barra1 ">
+
+        </div>
+
+        <div class="barra bgC py-3 ">
+            <div class="posicionText ">
+                <h3 class="text-white ">Ellos usan Hiit</h3>
+            </div>
+            <div class="posicionImg ">
+                <img class="marginImg img-fluid " src="img/ac-sports.png " alt=" ">
+            </div>
+
+            <img src="img/Page1.png " class="img-fluid " alt=" ">
+        </div>
+
+        <div class="barra1 ">
+
+        </div>
+
+        <div class="barra bgC py-3 image ">
+            <div class="posicionImgR1 d-none d-lg-block ">
+                <img src="img/Soporte.png " alt=" ">
+            </div>
+            <div class="posicionText1 ">
+                <p class="text-white ">Soporte <br> Técnico</p>
+            </div>
+            <div class="posicionImgR2 d-none d-lg-block ">
+                <img src="img/icn_sin instalaciones copy (1).png " alt=" ">
+            </div>
+            <div class="posicionImgR3 d-none d-lg-block ">
+                <img src="img/icn_reportes.png " alt=" ">
+            </div>
+            <div class="posicionText3 ">
+                <p class="text-white ">Información <br> Encriptada</p>
+            </div>
+            <div class="posicionText4 ">
+                <h3 class="text-white ">Beneficios</h3>
+            </div>
+
+            <img src="img/plecanegra.png " class="img-fluid " alt=" ">
+        </div>
+
+
+        <div class="barra1 ">
+
+        </div>
+
+        <div class="bgC py-5 ">
+
+            <form action=" ">
+                <div class="row justify-content-center ">
+
+                    <div class="col-lg-6 form-group form-group-top ">
+                        <h3 class=" col-6 ">Contacto</h3>
+                        <h5>Contactenos y puede iniciar una prueba gratis</h5>
+                        <input name="nombre " placeholder="Ingrese su nombre completo " onfocus="this.placeholder='' " onblur="this.placeholder='Ingrese su nombre completo' " class="common-input mb-3 form-control " required=" " type="text ">
+                        <input name="correo " placeholder="Introduzca la dirección de correo electrónico " pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$ " onfocus="this.placeholder='' " onblur="this.placeholder='Enter email address'
+                        " class="common-input mb-3 form-control " required=" " type="email ">
+                        <textarea class="pb-5 mb-3 common-textarea form-control " name="comentario " placeholder="Mensaje o comentario " onfocus="this.placeholder='' " onblur="this.placeholder='Messege' " required=" "></textarea>
+                        <input type="button " class="button " value="Enviar ">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="colornav py-5 ">
+            <div class="container d-flex justify-content-between ">
+
+                <div class="col-4 ">
+                    <img src="img/Logo_Hiit.png " alt=" ">
+                </div>
+                <div class="row ">
+
+                    <div class="col-12 ">
+                        <p class="text-white ">acerca de nosotros </p>
+                    </div>
+                    <div class="col-12 ">
+                        <p class="text-white ">contacto@hiit.com </p>
+                    </div>
+                    <div class="col-12 ">
+                        <p class="text-white ">aviso de privacidad</p>
+                    </div>
+
+                </div>
+
+                <div class="row ">
+                    <div class="col-12 ">
+                        <a href="https://admin.hiit.io/ ">
+                            <p class="coloGrisClaro "> Acceso a clientes></p>
+                        </a>
+                    </div>
+                    <div class="col-12 ">
+
+                        <a href="https://www.facebook.com/stackcodeio/ ">
+                            <i class="fa fa-facebook-official " style="color:rgb(107, 100, 100) "></i>
+                            <p class="coloGrisClaro "> Facebook</p>
+                        </a>
+                    </div>
+                    <div class="col-12 ">
+
+                        <a href="https://twitter.com/stackcodeio ">
+                            <i class="fa fa-twitter " style="color:rgb(107, 100, 100) "></i>
+                            <p class="coloGrisClaro "> Twitter</p>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class=" container row ml-3 ">
+                <div class="col-12 ">
+                    <p class="coloGrisClaro ">&copy; 2017</p>
+                </div>
+
+            </div>
+            <hr>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js " crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js " crossorigin></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>

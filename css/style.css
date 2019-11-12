@@ -1,0 +1,189 @@
+.colornav {
+    background-color: #252525;
+}
+
+.bgC {
+    background-color: #f1f5f7;
+}
+
+.colorNaranja {
+    color: #ff6319;
+}
+
+.coloGrisObscuro {
+    color: #252525;
+}
+
+.coloGrisClaro {
+    color: #f1f5f7;
+}
+
+.alin {
+    margin-left: 10%;
+    bottom: 20px;
+}
+
+.barra {
+    width: 100%;
+}
+
+.botonPosicion {
+    position: absolute;
+    text-align: center;
+    top: -20px;
+}
+
+.barra1 {
+    width: 100%;
+    height: 80px;
+    background-color: #f1f5f7;
+}
+
+.posicionImg {
+    position: absolute;
+    text-align: end;
+    margin-left: 50%;
+}
+
+.posicionText {
+    position: absolute;
+    text-align: end;
+    margin-left: 20%;
+    margin-top: 8%;
+}
+
+.marginImg {
+    margin-top: 20%;
+}
+
+.posicionImgR1 {
+    position: absolute;
+    text-align: end;
+    margin-left: 70%;
+    margin-top: 5%;
+}
+
+.posicionText1 {
+    position: absolute;
+    text-align: end;
+    margin-left: 70%;
+    margin-top: 12%;
+}
+
+.posicionImgR2 {
+    position: absolute;
+    text-align: end;
+    margin-left: 55%;
+    margin-top: 5%;
+}
+
+.posicionText2 {
+    position: absolute;
+    text-align: end;
+    margin-left: 55%;
+    margin-top: 12%;
+}
+
+.posicionImgR3 {
+    position: absolute;
+    text-align: end;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+.posicionText3 {
+    position: absolute;
+    text-align: end;
+    margin-left: 45%;
+    margin-top: 12%;
+}
+
+.posicionText4 {
+    position: absolute;
+    text-align: end;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.posicionText5 {
+    position: absolute;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 8%;
+    color: white;
+}
+
+.posicionText6 {
+    position: absolute;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+ul {
+    list-style-image: url('../img/check.png');
+    list-style-type: square;
+}
+
+.posicionText7 {
+    position: absolute;
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.image {
+    text-align: end;
+}
+
+.button {
+    background-color: #ff6319;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+    .posicionText7 {
+        position: absolute;
+        text-align: left;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .posicionText5 {
+        position: absolute;
+        text-align: center;
+        margin-left: 35%;
+        margin-top: 15%;
+        color: #252525;
+    }
+    .marginImg {
+        margin-top: 8%;
+    }
+    .posicionText1 {
+        position: absolute;
+        text-align: end;
+        margin-left: 70%;
+        margin-top: 6%;
+    }
+    .posicionText3 {
+        position: absolute;
+        text-align: end;
+        margin-left: 45%;
+        margin-top: 6%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .posicionText7 {
+        position: absolute;
+        text-align: left;
+        margin-left: 5%;
+        margin-top: 1%;
+        margin-bottom: 10%;
+    }
+}
